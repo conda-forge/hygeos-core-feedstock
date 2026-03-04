@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/hygeos/core/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: c9d334d6ef3e209e5ec9a1d7f7e0880048ae8497a9209f007b30a4867bfe525d
+  sha256: 5a71f472f7ebb3a1efcdbbcb40320a5f8d5c806237b6159456a8c2e52cab36ad
 
 build:
   number: 0
