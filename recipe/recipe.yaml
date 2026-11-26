@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.0.1"
+  version: "2.0.2"
 
 package:
   name: hygeos-core
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/hygeos/hygeos-core/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: b1c080b8b93c9c5af6492c78013331236ab8490dcd5b81a9d4e1565dc0a6db55
+  sha256: 93af39f0b39f55fd3b57a39bda98ae0d57d33ffa0076dfb4737c04dc1db1997f
 
 build:
   number: 0
