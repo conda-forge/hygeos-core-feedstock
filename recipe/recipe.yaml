@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.0.0"
+  version: "2.0.1"
 
 package:
   name: hygeos-core
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://github.com/hygeos/hygeos-core/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 05d350a9c613f55dc6ea855aa60e462b9e6ed095d9ffc455b9c4eca4cf39a225
+  sha256: b1c080b8b93c9c5af6492c78013331236ab8490dcd5b81a9d4e1565dc0a6db55
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
