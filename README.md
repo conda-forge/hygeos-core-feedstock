@@ -3,7 +3,7 @@ About hygeos-core-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hygeos-core-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/hygeos/core
+Home: https://github.com/hygeos/hygeos-core
 
 Package license: Apache-2.0
 
