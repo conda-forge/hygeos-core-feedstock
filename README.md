@@ -190,6 +190,3 @@ Feedstock Maintainers
 * [@danschef](https://github.com/danschef/)
 * [@fsteinmetz](https://github.com/fsteinmetz/)
 
-
-<!-- dummy commit to enable rerendering -->
-

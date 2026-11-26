@@ -1,0 +1,53 @@
+schema_version: 1
+
+context:
+  version: "2.0.0"
+
+package:
+  name: hygeos-core
+  version: ${{ version }}
+
+source:
+  url: https://github.com/hygeos/hygeos-core/archive/refs/tags/v${{ version }}.tar.gz
+  sha256: 05d350a9c613f55dc6ea855aa60e462b9e6ed095d9ffc455b9c4eca4cf39a225
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - poetry-core >=1
+  run:
+    - python >=${{ python_min }}
+    - dask
+    - h5netcdf
+    - lxml
+    - matplotlib-base
+    - python-dotenv
+    - toml
+    - tqdm
+    - xarray
+
+tests:
+  - python:
+      imports:
+        - hygeos_core
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: A collection of common procedures for generic programming purposes
+  license: Apache-2.0
+  license_file: LICENSE
+  homepage: https://github.com/hygeos/hygeos-core
+
+extra:
+  recipe-maintainers:
+    - fsteinmetz
+    - danschef
