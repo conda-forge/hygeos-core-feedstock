@@ -23,6 +23,7 @@ requirements:
     - dask
     - h5netcdf
     - lxml
+    - matplotlib-base
     - python-dotenv
     - toml
     - tqdm
