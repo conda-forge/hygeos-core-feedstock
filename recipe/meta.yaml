@@ -1,13 +1,12 @@
-{% set version = "1.3.0" %}
-{% set python_min = "3.11" %}
+{% set version = "2.0.0" %}
 
 package:
   name: hygeos-core
   version: {{ version }}
 
 source:
-  url: https://github.com/hygeos/core/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 5a71f472f7ebb3a1efcdbbcb40320a5f8d5c806237b6159456a8c2e52cab36ad
+  url: https://github.com/hygeos/hygeos-core/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 05d350a9c613f55dc6ea855aa60e462b9e6ed095d9ffc455b9c4eca4cf39a225
 
 build:
   number: 0
@@ -16,15 +15,15 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }},<3.14
+    - python {{ python_min }}
     - pip
     - poetry-core >=1
   run:
-    - python >={{ python_min }},<3.14
+    - python >={{ python_min }}
     - dask
     - h5netcdf
     - lxml
-    - numba
+    - matplotlib-base
     - python-dotenv
     - toml
     - tqdm
@@ -32,7 +31,7 @@ requirements:
 
 test:
   imports:
-    - core
+    - hygeos_core
   requires:
     - python {{ python_min }}
     - pip
@@ -40,7 +39,7 @@ test:
     - pip check
 
 about:
-  home: https://github.com/hygeos/core
+  home: https://github.com/hygeos/hygeos-core
   summary: "A collection of common procedures for generic programming purposes"
   license: Apache-2.0
   license_file: LICENSE
